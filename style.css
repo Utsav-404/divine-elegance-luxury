@@ -54,6 +54,10 @@ body {
     overflow-x: hidden;
     line-height: 1.7;
     font-weight: 400;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    pading: 0;
 }
 
 /* === LUXURY SCROLLING BANNER === */
@@ -1251,6 +1255,7 @@ body {
     .contact-link { padding: 0.8rem 1rem; font-size: 0.9rem; }
 
 }
+
 
 
 
