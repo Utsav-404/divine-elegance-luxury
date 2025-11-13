@@ -1,4 +1,8 @@
 /* === ULTRA LUXURY CSS VARIABLES === */
+*{
+    padding: 0;
+    margin: 0;
+}
 :root {
     /* Premium Gold Colors */
     --primary-gold: #D4AF37;
@@ -1249,4 +1253,5 @@ body {
     .feature-card { padding: 3rem 1.5rem; }
     .developer-signature { padding: 2rem 1.5rem; }
     .contact-link { padding: 0.8rem 1rem; font-size: 0.9rem; }
+
 }
