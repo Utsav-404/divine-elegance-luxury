@@ -14,7 +14,7 @@ er
 
 ## 🚀 Live Demo
 
-**[🌐 View Live Website](https://utsavbiswas.github.io)**
+**[🌐 View Live Website]([https://utsavbiswas.github.io](https://utsav-404.github.io/divine-elegance-luxury/))**
 
 ## 📸 Preview
 
