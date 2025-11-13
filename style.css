@@ -1252,3 +1252,156 @@ body {
 
 }
 
+
+
+
+
+
+
+
+
+
+/* Responsive fixes for mobile layout (add at end of style.css or save as responsive-fixes.css and include in <head>) */
+
+/* Define consistent heights to account for fixed banner + header */
+:root {
+    --lux-banner-h: 44px;
+    --lux-header-h: 70px;
+}
+
+/* Ensure content is pushed below fixed top elements */
+body {
+    padding-top: calc(var(--lux-banner-h) + var(--lux-header-h));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure fixed top elements report consistent heights */
+.luxury-scroll-banner {
+    height: var(--lux-banner-h);
+    line-height: var(--lux-banner-h);
+    padding: 6px 8px;
+    font-size: 0.78rem;
+}
+
+.luxury-header {
+    top: var(--lux-banner-h);
+}
+
+/* Mobile / Tablet breakpoints */
+@media (max-width: 900px) {
+    .luxury-hero,
+    .collections-hero,
+    .heritage-hero,
+    .concierge-hero {
+        grid-template-columns: 1fr !important;
+        padding: calc(var(--lux-header-h) + 16px) 1.25rem 2.25rem !important;
+        gap: 1.5rem;
+    }
+
+    .hero-title,
+    .collections-title,
+    .heritage-title,
+    .concierge-title {
+        font-size: 2.2rem !important;
+        line-height: 1.08 !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero-subtitle,
+    .collections-subtitle,
+    .heritage-subtitle,
+    .concierge-subtitle {
+        font-size: 1rem !important;
+        max-width: 100% !important;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+    }
+
+    .logo-main {
+        font-size: 1.6rem;
+    }
+
+    .luxury-menu {
+        gap: 1.25rem;
+    }
+
+    .luxury-actions .action-btn {
+        width: 42px;
+        height: 42px;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .luxury-showcase {
+        transform: scale(0.95);
+    }
+}
+
+/* Very small phones - hide large banner and further downscale */
+@media (max-width: 480px) {
+    .luxury-scroll-banner {
+        display: none !important;
+    }
+
+    .luxury-header {
+        top: 0 !important;
+    }
+
+    body {
+        padding-top: var(--lux-header-h);
+    }
+
+    .luxury-hero {
+        padding: calc(var(--lux-header-h) + 10px) 0.9rem 1.6rem !important;
+    }
+
+    .hero-title,
+    .collections-title,
+    .heritage-title,
+    .concierge-title {
+        font-size: 1.5rem !important;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem !important;
+    }
+
+    .hero-badge {
+        padding: 0.45rem 0.9rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .luxury-actions {
+        gap: 0.6rem;
+    }
+
+    .hero-actions .luxury-btn {
+        padding: 0.9rem 1.6rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-visual {
+        margin-top: 1rem;
+    }
+}
+
+/* Fluid images */
+img, video, .product-visual, .collection-visual {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Banner scroll track tweak */
+.banner-track {
+    min-width: 200%;
+}
+
+
