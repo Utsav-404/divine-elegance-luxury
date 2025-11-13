@@ -40,7 +40,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
 }
 
 html {
@@ -1251,6 +1252,7 @@ body {
     .contact-link { padding: 0.8rem 1rem; font-size: 0.9rem; }
 
 }
+
 
 
 
