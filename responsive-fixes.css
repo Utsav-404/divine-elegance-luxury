@@ -1,1 +1,164 @@
 
+/* === MOBILE VIEWPORT FIX === */
+/* Force all elements to respect container width */
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Main container fixes */
+.luxury-hero,
+.features-container,
+.footer-content,
+.nav-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Specific mobile fixes */
+@media screen and (max-width: 768px) {
+    body {
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .luxury-hero {
+        min-height: 100vh;
+        padding: 100px 1rem 2rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        word-wrap: break-word;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .feature-card {
+        margin: 0 1rem;
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .developer-profile {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .dev-contacts {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    /* Prevent horizontal scroll */
+    .luxury-scroll-banner,
+    .luxury-header,
+    .luxury-hero,
+    .luxury-features,
+    .luxury-footer {
+        width: 100%;
+        max-width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .luxury-btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .hero-features {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .feature-item {
+        flex: 1;
+        min-width: 140px;
+        justify-content: center;
+    }
+    
+    .nav-container {
+        padding: 0 0.5rem;
+    }
+    
+    .brand-logo .logo-text {
+        transform: scale(0.9);
+    }
+}
+
+/* Fix for scrolling banner */
+.luxury-scroll-banner {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Ensure all sections take full width but don't overflow */
+section {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Fix for showcase items */
+.luxury-showcase {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.showcase-item {
+    flex-shrink: 0;
+}
