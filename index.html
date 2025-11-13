@@ -8,9 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="responsive-fixes.css">
-    <script> 
-         <script> (function(){ function adjustTopPadding(){ var header = document.querySelector('.luxury-header') || document.querySelector('header') || document.querySelector('.site-header'); var banner = document.querySelector('.luxury-scroll-banner') || document.querySelector('.top-banner') || null; var headerHeight = 0, bannerHeight = 0; if (header){ var hdrRect = header.getBoundingClientRect(); headerHeight = Math.max(hdrRect.height, parseFloat(getComputedStyle(header).height) || 0); // if header has top set (e.g., top: 44px) include that var hdrTop = parseFloat(getComputedStyle(header).top) || 0; headerHeight += hdrTop; } if (banner && getComputedStyle(banner).display !== 'none'){ var bRect = banner.getBoundingClientRect(); bannerHeight = Math.max(bRect.height, parseFloat(getComputedStyle(banner).height) || 0); } var total = Math.round(headerHeight + bannerHeight); // set CSS variables and body padding document.documentElement.style.setProperty('--lux-header-h', total + 'px'); // keep single var for compatibility document.body.style.paddingTop = total + 'px'; } window.addEventListener('load', adjustTopPadding); window.addEventListener('resize', adjustTopPadding); // run after some dynamic changes setTimeout(adjustTopPadding, 500); })(); </script>
-    </script>
 </head>
 <body>
     <!-- Ultra Luxury Loading Screen -->
@@ -369,5 +366,6 @@
 </body>
 
 </html>
+
 
 
