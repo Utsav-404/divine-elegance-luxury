@@ -2,25 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<style>
-* { box-sizing: border-box; max-width: 100%; }
-body, html { width: 100%; margin: 0; padding: 0; overflow-x: hidden; }
-</style>
     <title>Divine Elegance | Luxury Beyond Imagination</title>
+    
+    <!-- URGENT MOBILE FIX -->
+    <style>
+    /* === MOBILE EMERGENCY FIX === */
+    * { 
+        box-sizing: border-box !important; 
+        max-width: 100% !important; 
+    }
+    html, body { 
+        width: 100% !important; 
+        margin: 0 !important; 
+        padding: 0 !important; 
+        overflow-x: hidden !important; 
+    }
+    
+    /* Force all sections to respect width */
+    .luxury-hero,
+    .luxury-features,
+    .luxury-footer,
+    .nav-container,
+    .features-container,
+    .footer-content {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    
+    /* Mobile specific fixes */
+    @media (max-width: 768px) {
+        body {
+            width: 100vw !important;
+        }
+        .luxury-hero {
+            padding: 100px 15px 2rem !important;
+            grid-template-columns: 1fr !important;
+        }
+        .hero-title {
+            font-size: 2.2rem !important;
+            line-height: 1.2 !important;
+        }
+    }
+    </style>
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="responsive-fixes.css">
-    <style>
-        <style>
-/* EMERGENCY MOBILE FIX */
-* { max-width: 100%; box-sizing: border-box; }
-html, body { width: 100%; overflow-x: hidden; }
-body { margin: 0; padding: 0; }
-</style>
-    </style>
 </head>
 <body>
     <!-- Ultra Luxury Loading Screen -->
@@ -379,6 +408,7 @@ body { margin: 0; padding: 0; }
 </body>
 
 </html>
+
 
 
 
